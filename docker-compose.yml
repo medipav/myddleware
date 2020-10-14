@@ -1,0 +1,45 @@
+version: '2'
+
+services:
+
+  myddleware:
+    build: .
+    ports:
+      - 20000:80
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=myddleware
+      - MYSQL_ROOT_PASSWORD=secret
+    volumes:
+      - ./:/var/www/html:cached
+      - ./app/config/parameters.yml.docker:/var/www/html/app/config/parameters.yml
+      - ./app/config/public/parameters_smtp.yml.docker:/var/www/html/app/config/public/parameters_smtp.yml
+      - ./app/config/public/parameters_public.yml.docker:/var/www/html/app/config/public/parameters_public.yml
+      - ./.temp/.composer:/root/.composer:cached
+    links:
+      - mysql
+      - phpmyadmin
+
+  mysql:
+    image: mysql:5.5
+    environment:
+      - MYSQL_DATABASE=myddleware
+      - MYSQL_ROOT_PASSWORD=secret
+      - max_allowed_packet=524288000
+      - wait_timeout=100
+    volumes:
+      - mysql:/var/lib/mysql:rw
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 20001:80
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=secret
+    links:
+      - mysql
+
+volumes:
+  mysql:
