@@ -51,3 +51,16 @@
 
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
+
+# IDEs
+.idea/
+.vscode/
+
+# Deployment & DevOps
+.temp/
+/CLONE/
+deploy_key
+deploy_key.pub
+uat.pem
+/*.retry
+/var/databases/filebrowser.db

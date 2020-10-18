@@ -14,10 +14,6 @@ docker-compose up -d
 docker-compose ps
 ```
 
-## Dati di accesso Vtiger
-Vtiger1: admin/admin
-Vtiger2: admin/admin
-
 ## Installare le dipendence
 ```bash
 docker-compose run --rm myddleware php composer.phar install --ignore-platform-reqs --no-scripts
@@ -35,7 +31,7 @@ docker-compose run --rm myddleware php composer.phar run-script post-install-cmd
 
 ## Installare il database
 ```bash
-docker-compose exec myddleware bash prepare-database.sh
+docker-compose exec myddleware bash bin/prepare-database
 ```
 
 ## Dati di accesso Myddleware
