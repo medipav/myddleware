@@ -1,4 +1,4 @@
-
+#!make
 
 start:
 	docker-compose down -v
@@ -10,3 +10,7 @@ start:
 	docker-compose run --rm myddleware php composer.phar run-script post-install-cmd
 	docker-compose run --rm myddleware bash prepare-database.sh
 	docker-compose up -d
+
+prod:
+	docker-compose up -d
+	docker-compose stop phpmyadmin
