@@ -19,6 +19,7 @@ services:
     links:
       - mysql
       - phpmyadmin
+      - docker-host
 
   mysql:
     image: mysql:5.5
@@ -40,6 +41,12 @@ services:
       - PMA_PASSWORD=secret
     links:
       - mysql
+
+  docker-host:
+    image: qoomon/docker-host
+    cap_add: [ "NET_ADMIN", "NET_RAW" ]
+    mem_limit: 8M
+    restart: on-failure
 
 volumes:
   mysql:
