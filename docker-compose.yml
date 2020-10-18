@@ -5,7 +5,7 @@ services:
   myddleware:
     build: .
     ports:
-      - 20000:80
+      - 30000:80
     environment:
       - MYSQL_HOST=mysql
       - MYSQL_DATABASE=myddleware
@@ -33,7 +33,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
-      - 20001:80
+      - 30001:80
     environment:
       - PMA_HOST=mysql
       - PMA_USER=root
