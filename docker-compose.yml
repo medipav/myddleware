@@ -42,6 +42,13 @@ services:
     links:
       - mysql
 
+  adminer:
+    image: adminer
+    ports:
+      - 30002:8080
+    links:
+      - docker-host
+
   docker-host:
     image: qoomon/docker-host
     cap_add: [ "NET_ADMIN", "NET_RAW" ]

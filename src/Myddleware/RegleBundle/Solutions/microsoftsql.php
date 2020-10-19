@@ -41,7 +41,8 @@ class microsoftsqlcore extends database {
 		if ($this->driver == 'sqlsrv') {
 			return new \PDO($this->driver.':Server='.$this->paramConnexion['host'].','.$this->paramConnexion['port'].';Database='.$this->paramConnexion['database_name'],$this->paramConnexion['login'], $this->paramConnexion['password']);
 		} else {
-			return new \PDO($this->driver.':host='.$this->paramConnexion['host'].';port='.$this->paramConnexion['port'].';dbname='.$this->paramConnexion['database_name'].';charset='.$this->charset, $this->paramConnexion['login'], $this->paramConnexion['password']);
+		    $dsn = $this->driver.':host='.$this->paramConnexion['host'].';port='.$this->paramConnexion['port'].';dbname='.$this->paramConnexion['database_name'].';charset='.$this->charset;
+		    return new \PDO($dsn, $this->paramConnexion['login'], $this->paramConnexion['password']);
 		}
 	}
 	
