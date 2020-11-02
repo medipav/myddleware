@@ -589,9 +589,14 @@ class vtigercrmcore extends solution
 						}
 					}
 
+                    file_put_contents(__DIR__.'/../../../../var/logs/vtigercrm.log', '[create:data] '.json_encode($data)."\n", FILE_APPEND);
+
 					$resultCreate = $this->vtigerClient->create($param['module'], $data);
 
-					if (!empty($resultCreate) && $resultCreate['success'] && !empty($resultCreate['result'])) {
+                    file_put_contents(__DIR__.'/../../../../var/logs/vtigercrm.log', '[create:resp] '.json_encode($resultCreate)."\n", FILE_APPEND);
+
+
+                    if (!empty($resultCreate) && $resultCreate['success'] && !empty($resultCreate['result'])) {
 						if ($param['module'] == "LineItem") {
 							if (empty($this->moduleList)) {
 								$this->setModulePrefix();

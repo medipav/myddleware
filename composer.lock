@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e7867fe5e8a4bf7d1c7d9e73c35b6bf",
+    "content-hash": "21269ee03a24238a6f96edd35556b4d8",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -2040,16 +2040,16 @@
         },
         {
             "name": "javanile/vtiger-client",
-            "version": "0.0.13",
+            "version": "0.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/javanile/vtiger-client.git",
-                "reference": "c4b6294242ba44e3f0d395d6daf2ec3bc1669a17"
+                "reference": "fa89d968cb17794435854e4c9f11e21b1311f357"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/javanile/vtiger-client/zipball/c4b6294242ba44e3f0d395d6daf2ec3bc1669a17",
-                "reference": "c4b6294242ba44e3f0d395d6daf2ec3bc1669a17",
+                "url": "https://api.github.com/repos/javanile/vtiger-client/zipball/fa89d968cb17794435854e4c9f11e21b1311f357",
+                "reference": "fa89d968cb17794435854e4c9f11e21b1311f357",
                 "shasum": ""
             },
             "require": {
@@ -2075,7 +2075,7 @@
                     "email": "bianco@javanile.org"
                 }
             ],
-            "time": "2019-09-04T14:38:49+00:00"
+            "time": "2020-11-02T01:44:03+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -2704,12 +2704,12 @@
             "version": "v2.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/whiteoctober/Pagerfanta.git",
+                "url": "https://github.com/BabDev/Pagerfanta.git",
                 "reference": "a53ff01d521648d9dbca19b93ac6bc75a59b0972"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/a53ff01d521648d9dbca19b93ac6bc75a59b0972",
+                "url": "https://api.github.com/repos/BabDev/Pagerfanta/zipball/a53ff01d521648d9dbca19b93ac6bc75a59b0972",
                 "reference": "a53ff01d521648d9dbca19b93ac6bc75a59b0972",
                 "shasum": ""
             },
@@ -3019,6 +3019,7 @@
                 "session",
                 "yubikey"
             ],
+            "abandoned": true,
             "time": "2014-11-03T18:35:42+00:00"
         },
         {
@@ -3446,6 +3447,7 @@
                 "configuration",
                 "distribution"
             ],
+            "abandoned": true,
             "time": "2019-06-18T15:43:58+00:00"
         },
         {
@@ -4905,6 +4907,7 @@
                 "i18n",
                 "text"
             ],
+            "abandoned": true,
             "time": "2018-12-05T18:34:18+00:00"
         },
         {
@@ -5129,6 +5132,7 @@
                 "page",
                 "paging"
             ],
+            "abandoned": "babdev/pagerfanta-bundle",
             "time": "2020-01-30T14:33:11+00:00"
         },
         {
