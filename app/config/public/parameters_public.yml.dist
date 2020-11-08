@@ -2,7 +2,7 @@ parameters:
     php:
         executable: php
     locale: en
-    pager: 20
+    pager: 250
     migration:
         mode: 0
     notification:
