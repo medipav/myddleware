@@ -50,7 +50,7 @@ class vtigercrmcore extends solution
 									  );
 
     protected $exclude_module_list = [
-                                        'default'    => ['Users', "Documents"],
+                                        'default'    => [],
                                         'target'     => [],
                                         'source'     => [],
                                     ];
