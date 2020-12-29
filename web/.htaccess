@@ -5,6 +5,8 @@
 # to each configured DirectoryIndex file (e.g. index.php, index.html, index.pl).
 DirectoryIndex app.php
 
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
