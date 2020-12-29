@@ -80,6 +80,11 @@ RUN docker-php-ext-install intl
 RUN docker-php-ext-install mbstring
 RUN docker-php-ext-enable intl mbstring pdo_dblib
 
+RUN echo "display_errors=0" >> /usr/local/etc/php/conf.d/errors.ini
+RUN echo "max_execution_time=0" >> /usr/local/etc/php/conf.d/errors.ini
+RUN echo "memory_limit=4G" >> /usr/local/etc/php/conf.d/errors.ini
+RUN echo "post_max_size=4G" >> /usr/local/etc/php/conf.d/errors.ini
+RUN echo "upload_max_filesize=4G" >> /usr/local/etc/php/conf.d/errors.ini
 
 RUN cp /usr/local/bin/apache2-foreground /usr/local/bin/apache2-foreground-inherit; \
     { \
