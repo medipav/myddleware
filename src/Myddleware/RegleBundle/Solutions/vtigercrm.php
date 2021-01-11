@@ -659,7 +659,7 @@ class vtigercrmcore extends solution
 				try {
 					$data['id'] = $data['target_id'];
 					unset($data['target_id']);
-
+                    /*
 					if (!empty($lineItemFields) && in_array($param['module'], $this->inventoryModules, true)) {
 						foreach ($data as $inventorykey => $inventoryValue) {
 							if (in_array($inventorykey, $lineItemFields, true) && $inventorykey != "id") {
@@ -670,6 +670,7 @@ class vtigercrmcore extends solution
 							$data["LineItems"][0]["sequence_no"] = 1;
 						}
 					}
+                    */
 
 					$resultUpdate = $this->vtigerClient->update($param['module'], $data);
 
