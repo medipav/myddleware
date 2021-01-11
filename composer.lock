@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ecc0cd21d8f1647c708a6d92b0419659",
+    "content-hash": "89365dd444157b1e987e0ff1bf42d6d5",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -774,6 +774,7 @@
                 "cache",
                 "caching"
             ],
+            "abandoned": true,
             "time": "2019-11-29T11:22:01+00:00"
         },
         {
@@ -1481,7 +1482,7 @@
                     "homepage": "https://github.com/friendsofsymfony/FOSJsRoutingBundle/contributors"
                 },
                 {
-                    "name": "William Durand",
+                    "name": "William DURAND",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -2041,16 +2042,16 @@
         },
         {
             "name": "javanile/vtiger-client",
-            "version": "0.0.18",
+            "version": "0.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/javanile/vtiger-client.git",
-                "reference": "5d966be7eff95b103722fff684030b4b00d88621"
+                "reference": "0dc475ad288a4bb2a0882a5478855373feb47e28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/javanile/vtiger-client/zipball/5d966be7eff95b103722fff684030b4b00d88621",
-                "reference": "5d966be7eff95b103722fff684030b4b00d88621",
+                "url": "https://api.github.com/repos/javanile/vtiger-client/zipball/0dc475ad288a4bb2a0882a5478855373feb47e28",
+                "reference": "0dc475ad288a4bb2a0882a5478855373feb47e28",
                 "shasum": ""
             },
             "require": {
@@ -2076,7 +2077,7 @@
                     "email": "bianco@javanile.org"
                 }
             ],
-            "time": "2020-11-09T00:24:55+00:00"
+            "time": "2021-01-11T01:23:56+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -5079,13 +5080,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/whiteoctober/WhiteOctoberPagerfantaBundle.git",
-                "reference": "56872f1c21c963a1139882ae5a53ce28891489af"
+                "url": "https://github.com/sampart/WhiteOctoberPagerfantaBundle.git",
+                "reference": "24a9ba537b13fc10149ee9a6c359e22c07c8d8ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/56872f1c21c963a1139882ae5a53ce28891489af",
-                "reference": "56872f1c21c963a1139882ae5a53ce28891489af",
+                "url": "https://api.github.com/repos/sampart/WhiteOctoberPagerfantaBundle/zipball/24a9ba537b13fc10149ee9a6c359e22c07c8d8ea",
+                "reference": "24a9ba537b13fc10149ee9a6c359e22c07c8d8ea",
                 "shasum": ""
             },
             "require": {
@@ -5134,7 +5135,7 @@
                 "paging"
             ],
             "abandoned": "babdev/pagerfanta-bundle",
-            "time": "2020-01-30T14:33:11+00:00"
+            "time": "2020-11-15T19:32:53+00:00"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
